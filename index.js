@@ -15,7 +15,6 @@ exports.handler = (event, context, callback) => {
   // this intent should be the intent name that you provided in the Voice User Interface
   const INTENT_NAME = "HelloWorld"
 
-
   switch (event.request.type) {
     case "LaunchRequest":
       context.succeed(generateResponse(buildSpeechletResponse("Welcome to IT Academy. Let's start coding", false)))
@@ -24,29 +23,55 @@ exports.handler = (event, context, callback) => {
       switch (event.request.intent.name) {
         case INTENT_NAME: {
           let shouldEndSession = false;
-
+          
           // this message should hold the value that you want Alexa to speak when the intent is invoked with one of the utterances 
           const MESSAGE = "Hello World"
           context.succeed(generateResponse(buildSpeechletResponse(MESSAGE), shouldEndSession))
-
           break;
-        }
+        };
 
-        case 'FunnyNickname': {
-          const fetch = require('node-fetch');
-          fetch('https://api.codetunnel.net/random-nick', {
-            method: 'POST',
-            headers: {
-              'Accept': 'application/json',
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify([])
-          })
-            .then(res => res.json())
-            .then(json => callback(null, buildResponse({}, buildSpeechletResponse(json.nickname, false))));
+        case 'MyColorIsIntent': {
+          const favoriteColorSlot = event.request.intent.slots.Color;
+          let shouldEndSession = false;
+          let sessionAttributes = {};
+          let speechOutput = '';
 
+          if (favoriteColorSlot) {
+            const favoriteColor = favoriteColorSlot.value;
+            sessionAttributes = { favoriteColor };
+            speechOutput = `I now know your favorite color is ${favoriteColor}. You can ask me ` +
+              "your favorite color by saying, what's my favorite color?";
+          } else {
+            speechOutput = "I'm not sure what your favorite color is. Please try again.";
+          }
+
+          const speechletResponse = buildSpeechletResponse(speechOutput, shouldEndSession);
+          callback(null, buildResponse(sessionAttributes, speechletResponse));
           break;
-        }
+        };
+
+        case 'WhatsMyColorIntent': {
+          let favoriteColor;
+          const sessionAttributes = {};
+          let shouldEndSession = false;
+          let speechOutput = '';
+
+          if (event.session.attributes) {
+            favoriteColor = event.session.attributes.favoriteColor;
+          }
+
+          if (favoriteColor) {
+            speechOutput = `Your favorite color is ${favoriteColor}. Goodbye.`;
+            shouldEndSession = true;
+          } else {
+            speechOutput = "I'm not sure what your favorite color is, you can say, my favorite color " +
+              ' is red';
+          }
+
+          const speechletResponse = buildSpeechletResponse(speechOutput, shouldEndSession);
+          callback(null, buildResponse(sessionAttributes, speechletResponse));
+          break;
+        };
 
       }
       break;
