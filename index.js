@@ -15,8 +15,6 @@ exports.handler = (event, context, callback) => {
   // this intent should be the intent name that you provided in the Voice User Interface
   const INTENT_NAME = "HelloWorld"
 
-  // this message should hold the value that you want Alexa to speak when the intent is invoked with one of the utterances 
-  const MESSAGE = "Hello World"
 
   switch (event.request.type) {
     case "LaunchRequest":
@@ -25,7 +23,28 @@ exports.handler = (event, context, callback) => {
     case "IntentRequest":
       switch (event.request.intent.name) {
         case INTENT_NAME: {
-          context.succeed(generateResponse(buildSpeechletResponse(MESSAGE), false))
+          let shouldEndSession = false;
+
+          // this message should hold the value that you want Alexa to speak when the intent is invoked with one of the utterances 
+          const MESSAGE = "Hello World"
+          context.succeed(generateResponse(buildSpeechletResponse(MESSAGE), shouldEndSession))
+
+          break;
+        }
+
+        case 'FunnyNickname': {
+          const fetch = require('node-fetch');
+          fetch('https://api.codetunnel.net/random-nick', {
+            method: 'POST',
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify([])
+          })
+            .then(res => res.json())
+            .then(json => callback(null, buildResponse({}, buildSpeechletResponse(json.nickname, false))));
+
           break;
         }
 
@@ -54,4 +73,12 @@ const generateResponse = (speechletResponse) => {
     version: "1.0",
     response: speechletResponse
   }
+}
+
+const buildResponse = (sessionAttributes, speechletResponse) => {
+  return {
+    version: '1.0',
+    sessionAttributes,
+    response: speechletResponse,
+  };
 }
