@@ -24,7 +24,7 @@ Confused? OK, let’s break down what each part of the diagram above means:
     * Ask Response: Alexa says one phrase back to the user and awaits an answer. In this case, the session is held open and context is retained.
 
 
-###Developing Skills
+### Developing Skills
 
 The process of developing Skills is split into two parts.
 
@@ -36,7 +36,7 @@ In addition, you also need to define sample Utterances for your Skill in the por
 
 ![alexa](./resources/alexa-flow.png)
 
-##At the following links, you are provided with code snippets that implement different topics. They vary in complexity level, so be sure to check the one that suits you best:
+## At the following links, you are provided with code snippets that implement different topics. They vary in complexity level, so be sure to check the one that suits you best:
   [![hello-world](./resources/buttons/button-hello-world.png)](./tutorials/hello-world/index.md)
   ![color-picker](./resources/buttons/button-color-picker.png)
   ![nicknames](./resources/buttons/button-nicknames.png)
