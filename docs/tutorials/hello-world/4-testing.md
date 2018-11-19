@@ -8,12 +8,22 @@ So far, we have [created a Voice User Interface](./1-voice-user-interface.md), [
 
 1.  **Go back to the [Amazon Developer Portal](https://developer.amazon.com/edw/home.html#/skills/list?&sc_category=Owned&sc_channel=RD&sc_campaign=Evangelism2018&sc_publisher=github&sc_content=Survey&sc_detail=hello-world-nodejs-V2_GUI-4&sc_funnel=Convert&sc_country=WW&sc_medium=Owned_RD_Evangelism2018_github_Survey_hello-world-nodejs-V2_GUI-4_Convert_WW_beginnersdevs&sc_segment=beginnersdevs) and select your skill from the list.** You may still have a browser tab open if you started at the beginning of this tutorial.
 
-2. Access the **Alexa Simulator**, by selecting the **Test** link from the top navigation menu.
+2. If everything is all good and you followed all the steps, you should be able to see the Skill builder checklist all checked up. Congrats!
+
+![skill-builder-checklist](./resources/skill-builder-checklist.png)
+
+2. Now, let's test out our fresh new skill. Access the **Alexa Simulator**, by selecting the **Test** link from the top navigation menu.
 
 3. Enable Testing by activating the **Test is disabled for this skill** slider. It should be underneath the top navigation menu.  Enabling should change it to read **Test is enabled for this skill**.
 
+<br />
+
+![alexa-test-simulator](./resources/alexa-test-simulator.png)
+
+<br />
+
 4. To validate that your skill is working as expected, invoke your skill from the **Alexa Simulator**. You can either type or click and hold the mic from the input box to use your voice.
-	1. **Type** "Open" followed by the invocation name you gave your skill in [Step 1](./1-voice-user-interface.md). For example, "Open hello world".
+	1. **Type** "Open" followed by the invocation name you gave your skill in [Step 1](./1-voice-user-interface.md). For example, "Open helloworldskill".
 	2. **Use your voice** by clicking and holding the mic on the side panel and saying "Open" followed by the invocation name you gave your skill.
 	3. **If you've forgotten the invocation name** for your skill, revisit the **Build** panel on the top navigation menu and select **Invocation** from the sidebar to review it.
 
@@ -30,9 +40,7 @@ So far, we have [created a Voice User Interface](./1-voice-user-interface.md), [
 ![Alexa Start Session](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/4-5-3-alexa-start-session._TTH_.png)
 
     4.  Type in an Event Name into the **Event Name** field.  Delete the contents of the code editor, and paste the Lambda request you copied above into the code editor. The Event Name is only visible to you. Name your test event something descriptive and memorable. For our example, we entered an event name as "startSession". Additionally, by copying and pasting your Lambda Request from the service simulator, you can test different utterances and skill events beyond the pre-populated templates in Lambda.
-<!-- out of date
-![Copy request](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/fact/4-5-4-paste-request._TTH_.png)
--->
+
     5.  **Click the "Create" button.** This will save your test event and bring you back to the main configuration for your lambda function.
 
     6.  **Click the "Test" button to execute the "startSession" test event.**
