@@ -1,6 +1,6 @@
 ![alexa](./resources/amazon-alexa-logo.png)
 
-# Build Alexa Skills using NodeJS, AWS Lambda and Amazon Alexa Skills - test
+# Build Alexa Skills using NodeJS, AWS Lambda and Amazon Alexa Skills
 
 
 ## This workshop consists of two parts:
@@ -37,7 +37,7 @@ In addition, you also need to define sample Utterances for your Skill in the por
 ![alexa](./resources/alexa-flow.png)
 
 ## At the following links, you are provided with code snippets that implement different topics. They vary in complexity level, so be sure to check the one that suits you best:
-   [test](./tutorials/hello-world/index.md)
+
   [![hello-world](./resources/buttons/button-hello-world.png)](./tutorials/hello-world/index.md)
   ![color-picker](./resources/buttons/button-color-picker.png)
   ![nicknames](./resources/buttons/button-nicknames.png)
