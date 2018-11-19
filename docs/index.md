@@ -3,7 +3,7 @@
 # Build Alexa Skills using NodeJS, AWS Lambda and Amazon Alexa Skills
 
 
-##This workshop consists of two parts:
+## This workshop consists of two parts:
   * __Understanding how Amazon Alexa works and the components that come together when building an Alexa Skill application__
   * __Actually get our hands dirty with some JavaScript code that will be integrated in a AWS Lambda function and some easy-peasy configuration on Alexa Developer platform__
 
