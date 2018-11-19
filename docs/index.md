@@ -1,6 +1,6 @@
 ![alexa](./resources/amazon-alexa-logo.png)
 
-# Build Alexa Skills using NodeJS, AWS Lambda and Amazon Alexa Skills
+# Build Alexa Skills using NodeJS, AWS Lambda and Amazon Alexa Skills - test
 
 
 ## This workshop consists of two parts:
