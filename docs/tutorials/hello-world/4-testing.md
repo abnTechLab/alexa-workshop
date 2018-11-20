@@ -10,11 +10,15 @@ So far, we have [created a Voice User Interface](./1-voice-user-interface.md), [
 
 2. If everything is all good and you followed all the steps, you should be able to see the Skill builder checklist all checked up. Congrats!
 
+<br />
+
 ![skill-builder-checklist](./resources/skill-builder-checklist.png)
 
-2. Now, let's test out our fresh new skill. Access the **Alexa Simulator**, by selecting the **Test** link from the top navigation menu.
+<br />
 
-3. Enable Testing by activating the **Test is disabled for this skill** slider. It should be underneath the top navigation menu.  Enabling should change it to read **Test is enabled for this skill**.
+3. Now, let's test out our fresh new skill. Access the **Alexa Simulator**, by selecting the **Test** link from the top navigation menu.
+
+4. Enable Testing by activating the **Test is disabled for this skill** slider. It should be underneath the top navigation menu.  Enabling should change it to read **Test is enabled for this skill**.
 
 <br />
 
@@ -22,26 +26,46 @@ So far, we have [created a Voice User Interface](./1-voice-user-interface.md), [
 
 <br />
 
-4. To validate that your skill is working as expected, invoke your skill from the **Alexa Simulator**. You can either type or click and hold the mic from the input box to use your voice.
+5. To validate that your skill is working as expected, invoke your skill from the **Alexa Simulator**. You can either type or click and hold the mic from the input box to use your voice.
 	1. **Type** "Open" followed by the invocation name you gave your skill in [Step 1](./1-voice-user-interface.md). For example, "Open helloworldskill".
 	2. **Use your voice** by clicking and holding the mic on the side panel and saying "Open" followed by the invocation name you gave your skill.
 	3. **If you've forgotten the invocation name** for your skill, revisit the **Build** panel on the top navigation menu and select **Invocation** from the sidebar to review it.
 
-5. Ensure your skill works the way that you designed it to.
+  During testing, you should see the skill behave like this:
+
+  <br />
+
+  ![alexa-test-case](./resources/alexa-test-case.png)
+
+  <br />
+
+6. Ensure your skill works the way that you designed it to.
 	* After you interact with the Alexa Simulator, you should see the Skill I/O **JSON Input** and **JSON Output** boxes get populated with JSON data. You can also view the **Device Log** to trace your steps.
 	* If it's not working as expected, you can dig into the JSON to see exactly what Alexa is sending and receiving from the endpoint. If something is broken, AWS Lambda offers an additional testing tool to help you troubleshoot your skill.
 
-6.  **Configure a test event in AWS Lambda.** Now that you are familiar with the **request** and **response** boxes in the Service Simulator, it's important for you to know that you can use your **requests** to directly test your Lambda function every time you update it.  To do this:
+
+7.  **Configure a test event in AWS Lambda.** Now that you are familiar with the **request** and **response** boxes in the Service Simulator, it's important for you to know that you can use your **requests** to directly test your Lambda function every time you update it.  To do this:
     1.  Enter an utterance in the service simulator, and copy the generated Lambda Request (JSON Input) for the next step.
 
-    2.  **Open your Lambda function in AWS, open the Actions menu, and select "Configure test events."**![Configure Test events drop down](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/4-5-2-configure-test-event._TTH_.png)
+    2.  **Open your Lambda function in AWS, open the Actions menu, and select "Configure test events."**
 
-    3.  **Select "Create new test event". Choose "Alexa Start Session" as the Event Template from the dropdown list.** You can choose any test event in the list, as they are just templated event requests, but using "Alexa Start Session" is an easy one to remember.  
-![Alexa Start Session](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/4-5-3-alexa-start-session._TTH_.png)
+    <br />
 
-    4.  Type in an Event Name into the **Event Name** field.  Delete the contents of the code editor, and paste the Lambda request you copied above into the code editor. The Event Name is only visible to you. Name your test event something descriptive and memorable. For our example, we entered an event name as "startSession". Additionally, by copying and pasting your Lambda Request from the service simulator, you can test different utterances and skill events beyond the pre-populated templates in Lambda.
+    ![lambda-configure-test](./resources/lambda-configure-test.png)
+
+    <br />
+
+    3.  Select "Create new test event". You can choose any test event in the list, as they are just templated event requests, but you can use the default **Hello World** template. Now let's add the test data.
+
+    4. Delete the contents of the code editor, and paste the Lambda request you copied above into the code editor. The Event Name is only visible to you. Name your test event something descriptive and memorable. For our example, we entered **MyHelloWorldTest**. Additionally, by copying and pasting your Lambda Request from the service simulator, you can test different utterances and skill events beyond the pre-populated templates in Lambda.
 
     5.  **Click the "Create" button.** This will save your test event and bring you back to the main configuration for your lambda function.
+
+  <br />
+
+  ![lambda-create-test](./resources/lambda-create-test.png)
+
+  <br />
 
     6.  **Click the "Test" button to execute the "startSession" test event.**
 ![Test with event](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/4-5-5-save-and-test._TTH_.png)
@@ -57,11 +81,7 @@ So far, we have [created a Voice User Interface](./1-voice-user-interface.md), [
         *  **Log output.**  By effectively using console.log() statements in your Lambda code, you can track what is happening inside your function, and help to figure out what is happening when something goes wrong.  You will find the log to be incredibly valuable as you move into more advanced skills.
 ![CloudWatch Logs](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/4-5-5-3-log-output._TTH_.png)
 
-        *  **A link to your [CloudWatch](https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#logs:) logs for this function.**  This will show you **all** of the responses and log statements from every user interaction.  This is very useful, especially when you are testing your skill from a device with your voice.  (It is the "[Click here](https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#logs:)" link in the Log Output description.)
+        *  **A link to your [CloudWatch](https://console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logs:) logs for this function.**  This will show you **all** of the responses and log statements from every user interaction.  This is very useful, especially when you are testing your skill from a device with your voice.  (It is the "[Click here](https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#logs:)" link in the Log Output description.)
 
-7.  **Other testing methods to consider:**
-
-    *  [Echosim.io](https://echosim.io) - a browser-based Alexa skill testing tool that makes it easy to test your skills without carrying a physical device everywhere you go.
-    *  [Unit Testing with Alexa](https://github.com/alexa/alexa-cookbook/tree/master/testing/postman/README.md) - a modern approach to unit testing your Alexa skills with [Postman](http://getpostman.com) and [Amazon API Gateway](http://aws.amazon.com/apigateway).
 
 8.  **If your sample skill is working properly, you can now customize your skill.**

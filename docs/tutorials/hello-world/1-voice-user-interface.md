@@ -106,7 +106,7 @@ A good practice is to add the help intent as your last intent. Because if Alexa 
 
     <br />
 
-9. Now, after we will also create the AWS lambda function, we need to make then two components communicate with the other. In order to to that, they need to identify each other. Just as we have ID cards and passports, these components have a unique ID as well. For the Voice User Interface, you need to go to **Endpoint** tab in the Alexa Developer console and check the **AWS Lambda ARN**. Next to it, you will find a weird looking string with random numbers and letters. This is **Your Skill ID** and you need to copy it as we will further need it when configuring our Lambda function. You'll find a very convenient **Copy to Clipboard** button underneath it. Make sure o click **Save Model** and **Build Model** after you're done making changes here.
+9. Now, after we will also create the AWS lambda function, we need to make then two components communicate with the other. In order to to that, they need to identify each other. Just as we have ID cards and passports, these components have a unique ID as well. For the Voice User Interface, you need to go to **Endpoint** tab in the Alexa Developer console and check the **AWS Lambda ARN**. Next to it, you will find a weird looking string with random numbers and letters. This is **Your Skill ID** and you need to copy it as we will further need it when configuring our Lambda function. You'll find a very convenient **Copy to Clipboard** button underneath it. Make sure to click **Save Model** and **Build Model** after you're done making changes here.
 
 
 ![alexa-vui-endpoint](./resources/alexa-vui-endpoint.png)
