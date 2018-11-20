@@ -14,7 +14,7 @@
 
 Confused? OK, let’s break down what each part of the diagram above means:
 
-* An ‘Intent’ is the action a user requests Alexa complete - like a feature on an app.
+* An ‘Intent’ is the action a user requests Alexa complete - like a feature on an app.a
 * Each spoken phrase that can be used to activate a single Intent is called an ‘Utterance’.
 * The Wake Word activates Alexa and can be either Alexa, Echo or Amazon (set by the user).
 * The Invocation Name is a trigger which tells Alexa to use a specific Skill.

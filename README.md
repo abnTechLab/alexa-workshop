@@ -1,4 +1,4 @@
-![alexa](./resources/amazon-alexa-logo.png)
+![alexa](./docs/resources/amazon-alexa-logo.png)
 
 # Build Alexa Skills using NodeJS, AWS Lambda and Amazon Alexa Skills
 
@@ -10,11 +10,11 @@
 ## Let's start with the basics:
   * Alexa can complete a wide variety of tasks for you - from adjusting your smart lighting, to playing your favourite Spotify playlist or calling an Uber. She uses ‘Skills’ to achieve this: you can think of a Skill as Amazon’s version of a voice-only app, and each feature of a particular Skill is call an ‘Intent’. Since Alexa recognises natural language, there could be several ways that these questions or commands can be phrased. Each spoken phrase that can be used to activate a single Intent is called an ‘Utterance’.
 
-![alexa](./resources/alexa-skill-syntax.png)
+![alexa](./docs/resources/alexa-skill-syntax.png)
 
 Confused? OK, let’s break down what each part of the diagram above means:
 
-* An ‘Intent’ is the action a user requests Alexa complete - like a feature on an app.
+* An ‘Intent’ is the action a user requests Alexa complete - like a feature on an app.a
 * Each spoken phrase that can be used to activate a single Intent is called an ‘Utterance’.
 * The Wake Word activates Alexa and can be either Alexa, Echo or Amazon (set by the user).
 * The Invocation Name is a trigger which tells Alexa to use a specific Skill.
@@ -34,12 +34,12 @@ Secondly, you need to set it up on the Amazon Developer Services portal as an Al
 
 In addition, you also need to define sample Utterances for your Skill in the portal. Essentially, these are examples of expected phrases that people will use in order to engage an Intent.
 
-![alexa](./resources/alexa-flow.png)
+![alexa](./docs/resources/alexa-flow.png)
 
 ## At the following links, you are provided with code snippets that implement different topics. They vary in complexity level, so be sure to check the one that suits you best:
 
-  [![hello-world](./resources/buttons/button-hello-world.png)](./tutorials/hello-world/index.md)
-  ![color-picker](./resources/buttons/button-color-picker.png)
-  ![nicknames](./resources/buttons/button-nicknames.png)
-  ![cryptocurrency-rates](./resources/buttons/button-cryptocurrency-rates.png)
+  [![hello-world](./docs/resources/buttons/button-hello-world.png)](./docs/tutorials/hello-world/index.md)
+  ![color-picker](./docs/resources/buttons/button-color-picker.png)
+  ![nicknames](./docs/resources/buttons/button-nicknames.png)
+  ![cryptocurrency-rates](./docs/resources/buttons/button-cryptocurrency-rates.png)
  
