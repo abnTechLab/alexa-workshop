@@ -10,21 +10,25 @@ So far, we have [created a Voice User Interface](./1-voice-user-interface.md), [
 
 2. If everything is all good and you followed all the steps, you should be able to see the Skill builder checklist all checked up. Congrats!
 
-<br />
+  <br />
+  <br />
 
 ![skill-builder-checklist](./resources/skill-builder-checklist.png)
 
-<br />
+  <br />
+  <br />
 
 3. Now, let's test out our fresh new skill. Access the **Alexa Simulator**, by selecting the **Test** link from the top navigation menu.
 
 4. Enable Testing by activating the **Test is disabled for this skill** slider. It should be underneath the top navigation menu.  Enabling should change it to read **Test is enabled for this skill**.
 
-<br />
+  <br />
+  <br />
 
 ![alexa-test-simulator](./resources/alexa-test-simulator.png)
 
-<br />
+  <br />
+  <br />
 
 5. To validate that your skill is working as expected, invoke your skill from the **Alexa Simulator**. You can either type or click and hold the mic from the input box to use your voice.
 	1. **Type** "Open" followed by the invocation name you gave your skill in [Step 1](./1-voice-user-interface.md). For example, "Open helloworldskill".
@@ -34,9 +38,11 @@ So far, we have [created a Voice User Interface](./1-voice-user-interface.md), [
   During testing, you should see the skill behave like this:
 
   <br />
+  <br />
 
   ![alexa-test-case](./resources/alexa-test-case.png)
 
+  <br />
   <br />
 
 6. Ensure your skill works the way that you designed it to.
@@ -50,9 +56,11 @@ So far, we have [created a Voice User Interface](./1-voice-user-interface.md), [
     2.  **Open your Lambda function in AWS, open the Actions menu, and select "Configure test events."**
 
     <br />
+    <br />
 
     ![lambda-configure-test](./resources/lambda-configure-test.png)
 
+    <br />
     <br />
 
     3.  Select "Create new test event". You can choose any test event in the list, as they are just templated event requests, but you can use the default **Hello World** template. Now let's add the test data.
@@ -61,11 +69,15 @@ So far, we have [created a Voice User Interface](./1-voice-user-interface.md), [
 
     5.  **Click the "Create" button.** This will save your test event and bring you back to the main configuration for your lambda function.
 
-  <br />
+  
+    <br />
+    <br />
 
   ![lambda-create-test](./resources/lambda-create-test.png)
 
-  <br />
+  
+    <br />
+    <br />
 
     6.  **Click the "Test" button to execute the "startSession" test event.**
 ![Test with event](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/4-5-5-save-and-test._TTH_.png)
@@ -84,4 +96,8 @@ So far, we have [created a Voice User Interface](./1-voice-user-interface.md), [
         *  **A link to your [CloudWatch](https://console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logs:) logs for this function.**  This will show you **all** of the responses and log statements from every user interaction.  This is very useful, especially when you are testing your skill from a device with your voice.  (It is the "[Click here](https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#logs:)" link in the Log Output description.)
 
 
+
+    <br />
+    <br />
+    
 8.  **If your sample skill is working properly, you can now customize your skill.**

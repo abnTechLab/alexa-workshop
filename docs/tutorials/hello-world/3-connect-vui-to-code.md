@@ -14,14 +14,19 @@ On [page #1](./1-voice-user-interface.md) of this guide, we created a voice user
 
 4.  Paste your Lambda's ARN (Amazon Resource Name) into the textbox provided for **Default Region**.
 
-<br />
+  <br />
+  <br />
 
 ![default-region-alexa](./resources/default-region-alexa.png)
 
-<br />
+  <br />
+  <br />
 
 5. Click the **Save Endpoints** button at the top of the main panel.
 
 6. **Click the "Next" button to continue to page #4 of this guide.**
+
+  <br />
+  <br />
 
 [![Next](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_testing._TTH_.png)](./4-testing.md)

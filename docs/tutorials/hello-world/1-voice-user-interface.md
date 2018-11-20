@@ -92,36 +92,53 @@ A good practice is to add the help intent as your last intent. Because if Alexa 
 7. **Build the Interaction Model for your skill**
     
     <br />
+    <br />
 
 	1. On the left hand navigation panel, select the **JSON Editor** tab under **Interaction Model**. In the textfield provided, replace any existing code with the code provided in the [Interaction Model](../models/en-US.json).  Click **Save Model**.
     2. Click "Build Model".
 
     <br />
+    <br />
 
 	**Note:** You should notice that **Intents** and **Slot Types** will auto populate based on the JSON Interaction Model that you have now applied to your skill. Feel free to explore the changes here, to learn more about **Intents**, **Slots**, and **Utterances** open our [technical documentation in a new tab](https://developer.amazon.com/docs/custom-skills/create-intents-utterances-and-slots.html?&sc_category=Owned&sc_channel=RD&sc_campaign=Evangelism2018&sc_publisher=github&sc_content=Survey&sc_detail=hello-world-nodejs-V2_GUI-1&sc_funnel=Convert&sc_country=WW&sc_medium=Owned_RD_Evangelism2018_github_Survey_hello-world-nodejs-V2_GUI-1_Convert_WW_beginnersdevs&sc_segment=beginnersdevs).
 
     <br />
+    <br />
 
-8. Now, let's create our own custom intent. Select **Add** or **Add Intenst** from the left side navigation panel or by expanding the **Intents** .
+8. Now, let's create our own custom intent. Select **Add** or **Add Intent** from the left side navigation panel or by expanding the **Intents** .
 
 ![add-intent](./resources/add-intent.png)
 
 9. You will be prompted to an input field where we need to give a custom name to our intent. Let's type in **HelloWorldIntent**. After this, we need to add the utterances that will invoke out custom intent in the end. Think of all the different ways that a user could request to make our intent happen. A few examples could be: **Hi, Hello, Hey there**. Be sure to click **Save Model** and **Build Model** after you're done making changes here.
 
 <br />
+<br />
+
 
 ![custom-intent](./resources/custom-intent.png)
 
 <br />
+<br />
 
 10. If you now check the JSON from the **JSON Editor** tab, you will see that the modification you made in the UI are reflected in the JSON file itself.
 
+<br />
+<br />
+
 ![final-json](./resources/final-json.png)
+
+<br />
+<br />
 
 11. Now, after we will also create the AWS lambda function, we need to make then two components communicate with the other. In order to to that, they need to identify each other. Just as we have ID cards and passports, these components have a unique ID as well. For the Voice User Interface, you need to go to **Endpoint** tab in the Alexa Developer console and check the **AWS Lambda ARN**. Next to it, you will find a weird looking string with random numbers and letters. This is **Your Skill ID** and you need to copy it as we will further need it when configuring our Lambda function. You'll find a very convenient **Copy to Clipboard** button underneath it. Make sure to click **Save Model** and **Build Model** after you're done making changes here.
 
+<br />
+<br />
 
 ![alexa-vui-endpoint](./resources/alexa-vui-endpoint.png)
+
+<br />
+<br />
 
 12. If your interaction model builds successfully, proceed to the next step. If not, you should see an error. Try to resolve the errors. In our next step of this guide, we will be creating our Lambda function in the AWS developer console, but keep this browser tab open, because we will be returning here on [Page #3: Connect VUI to Code](./3-connect-vui-to-code.md).
 
@@ -130,5 +147,8 @@ A good practice is to add the help intent as your last intent. Because if Alexa 
 
      *  **Did you copy & paste the provided code correctly?**
      *  **Did you accidentally add any characters to the Interaction Model?**
+
+<br />
+<br />
 
 [![Next](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_lambda_function._TTH_.png)](./2-lambda-function.md)
