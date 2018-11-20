@@ -1,6 +1,6 @@
 ![helloworld](./resources/hello-world.png)
 
-#Hello World!
+# Hello World!
 
 #### This is the most simple example that will get you started with Alexa and AWS lambda in no time. 
 
