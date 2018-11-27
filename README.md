@@ -42,7 +42,7 @@ In addition, you also need to define sample Utterances for your Skill in the por
 ## At the following links, you are provided with code snippets that implement different topics. They vary in complexity level, so be sure to check the one that suits you best:
 
   [![hello-world](./docs/resources/buttons/button-hello-world.png)](./docs/tutorials/hello-world/index.md)
-  ![color-picker](./docs/resources/buttons/button-color-picker.png)
-  ![nicknames](./docs/resources/buttons/button-nicknames.png)
-  ![cryptocurrency-rates](./docs/resources/buttons/button-cryptocurrency-rates.png)
+  [![color-picker](./docs/resources/buttons/button-color-picker.png)](./docs/tutorials/color-picker/index.md)
+  [![nicknames](./docs/resources/buttons/button-nicknames.png)](./docs/tutorials/nicknames/index.md)
+  [![cryptocurrency-rates](./docs/resources/buttons/button-cryptocurrency-rates.png)](./docs/tutorials/cryptocurrency-rates/index.md)
  
