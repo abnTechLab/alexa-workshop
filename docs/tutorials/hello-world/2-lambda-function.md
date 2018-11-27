@@ -31,7 +31,7 @@ In the [first step of this guide](./1-voice-user-interface.md), we built the Voi
   <br />
 
 
-5. Clicking on the Lambda function name, you will be prompted with the lambda main screen. If you scroll down for a bit, you will see a section/tab called **Function code**
+5. Clicking on the Lambda function name in the **Designer** view, you will be prompted with the lambda main screen. If you scroll down for a bit, you will see a section/tab called **Function code**
 
   <br />
   <br />
