@@ -25,7 +25,7 @@ In the [first step of this guide](./1-voice-user-interface.md), we built the Voi
 
 <br />
 
-4. Be sure to check the lambda function associated with your team number from the list of available lambdas. This will be your playground for the following hours. Click on the `Alexa Skills Kit` trigger from the left panel and you can now see the `ASK` screen below. Inside the **Skill ID** field make sure to fill in the Skill ID that you have in clipboard from the Alexa Developer Console. Now, if you have good attention to details you might have already observed an important aspect: the lambda function has an unique ID for itself, which we need to copy and paste in the endpoint tab of the Alexa Developer Console, once we set up the lambda function. After pasting the Skill ID, make sure to hit **Add** so we can continue our journey.
+4. Be sure to check the lambda function associated with your team number from the list of available lambdas. This will be your playground for the following hours. Click on the `Alexa Skills Kit` trigger from the left panel and you can now see the `ASK` screen below. Inside the **Skill ID** field make sure to fill in the Skill ID that you have in clipboard from the Alexa Developer Console. Now, if you have good attention to details you might have already observed an important aspect: the lambda function has an unique ID for itself, which we need to copy and paste in the endpoint tab of the Alexa Developer Console, once we set up the lambda function. After pasting the Skill ID, make sure to hit **Add** and **Save** so we can continue our journey.
 
 
   <br />
