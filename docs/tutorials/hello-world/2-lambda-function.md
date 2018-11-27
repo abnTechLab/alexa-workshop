@@ -6,12 +6,13 @@
 
 In the [first step of this guide](./1-voice-user-interface.md), we built the Voice User Interface (VUI) for our Alexa skill.  On this page, we will be creating an AWS Lambda function using [Amazon Web Services](http://aws.amazon.com).  You can [read more about what a Lambda function is](http://aws.amazon.com/lambda), but for the purposes of this guide, what you need to know is that AWS Lambda is where our code lives.  When a user asks Alexa to use our skill, it is our AWS Lambda function that interprets the appropriate interaction, and provides the conversation back to the user.
 
-1.  **Go to http://console.aws.amazon.com and sign in to the console with the credentials provided to you by the ABN AMRO TechLab team**. :sunglasses:
+1.  **Go to https://technologylab.signin.aws.amazon.com/console and sign in to the console with the credentials provided to you by the ABN AMRO TechLab team**. :sunglasses:
+    **You need to provide `technologylab` as Account ID alongside the given credentials**.
 
   <br />
   <br />
 
-  [![Developer Console](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/2-1-sign-in-to-the-console._TTH_.png)](https://console.aws.amazon.com/console/home)
+  [![Developer Console](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/2-1-sign-in-to-the-console._TTH_.png)](https://technologylab.signin.aws.amazon.com/console)
 
   <br />
   <br />
@@ -20,62 +21,17 @@ In the [first step of this guide](./1-voice-user-interface.md), we built the Voi
 
 ![aws-console](./resources/aws-console.png)
 
-3.  **Check your AWS region.** AWS Lambda only works with the Alexa Skills Kit in these regions: US East (N. Virginia), US West (Oregon), Asia Pacific (Tokyo)  and EU (Ireland).  Make sure you choose the region closest to your customers. In our case, we will select the region **EU (Ireland)**.
+3. For your convenience, we have already created lambda functions and added the Alexa Skills Kit as a trigger to the lambda function. If you want to create a lambda function from scratch, you can follow the extra adjacent steps available [here](./adjacent-step-creating-lambda-function.md). It's just there for you to use in the future but for now you can proceed without that step. Let's move on.
 
 <br />
-<br />
 
-![Check Region](./resources/aws-regions.png)
+4. Be sure to check the lambda function associated with your team number from the list of available lambdas. This will be your playground for the following hours. Click on the `Alexa Skills Kit` trigger and you can now see the `ASK` screen. Inside the **Skill ID** field make sure to fill in the Skill ID that you have in clipboard from the Alexa Developer Console. Now, if you have good attention to details you might have already observed an important aspect: the lambda function has an unique ID for itself, which we need to copy and paste in the endpoint tab of the Alexa Developer Console, once we set up the lambda function. After pasting the Skill ID, make sure to hit **Add** so we can continue our journey.
 
-<br />
-<br />
-
-4.  **Click the orange "Create function" button.** It should be near the top of your screen.  (If you don't see this button, it is because you haven't created a Lambda function before.  Click the blue "Get Started" button near the center of your screen.)
 
   <br />
-  <br />
 
-  ![Create lambda function](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/2-4-create-a-lambda-function._TTH_.png)
 
-  <br />
-  <br />
-
-5.  There are three boxes labeled "Author from scratch", "Blueprints" and "Serverless Application Repository". **Click the radio button in the box titled "Author from scratch"**. After that, fill in the required fields. Give the lambda a suggestive name and leave the __Runtime__ section set to NodeJS. As for the role, make sure to select **Choose an existing role** and fill in the existing role provided to you by the ABN AMRO TechLab team. After everyting is in place, hit the **Create function** button again and roll up your sleeves.
-  
-  <br />
-  <br />
-
-![create-lambda-screen](./resources/create-lambda-screen.png)
-
-  <br />
-  <br />
-
-Whop-whoop! Your lambda function has been created as you are hopefully prompted with the following message **Congratulations! Your Lambda function "`your-lambda-function-name-here`" has been successfully created. You can now change its code and configuration.**. At the moment, the lambda function doesn't do anything ... yet. That's because right now, the lambda doesn't know anything about our Alexa Skill configuration. They are like two teenagers that seek to meet their perfect match, so let's facilitate their date. 
-
-  <br />
-  <br />
-
-![lambda](./resources/successfully-created-lambda.png)
-
-  <br />
-  <br />
-
-6. In the designer tab, you will see your lambda function name, in my case **"HelloWorldLambda"**. Under it, you can see a list of triggers. A trigger represents a service that we can configure to call our lambda function in order to execute it and get the results of the execution. Make sure to select **"Alexa Skills Kit"** from the list and by doing so, you will see that it will pop right under your Lambda with a very informative message: **Configuration required**
-
-  <br />
-  <br />
-
-![skill-id-required](./resources/skill-id-required.png)
-
-  <br />
-  <br />
-
-7. If you read all the messages available is this screen, you will realise that we are about to let love happen. Inside the **Skill ID** field make sure to fill in the Skill ID that you have in clipboard from the Alexa Developer Console. Now, if you have good attention to details you might have already observed an important aspect: the lambda function has an unique ID for itself, which we need to copy and paste in the endpoint tab of the Alexa Developer Console, once we set up the lambda function. After pasting the Skill ID, make sure to hit **Add** so we can continue our journey.
-
-  <br />
-  <br />
-
-8. Clicking back on the Lambda function name, you will be prompted with the previous screen. If you scroll down for a bit, you will see a section/tab called **Function code**
+5. Clicking on the Lambda function name, you will be prompted with the lambda main screen. If you scroll down for a bit, you will see a section/tab called **Function code**
 
   <br />
   <br />
@@ -85,7 +41,7 @@ Whop-whoop! Your lambda function has been created as you are hopefully prompted 
   <br />
   <br />
 
-9. Inside this, under the `index.js` file, you can see the actual code that is going to be executed once your lambda function is going to be called by our custom skill. I have already prepared the code for you with some comments as well, so make sure to check them.
+6. Inside this, under the `index.js` file, you can see the actual code that is going to be executed once your lambda function is going to be called by our custom skill. I have already prepared the code for you with some comments as well, so make sure to check them.
 
 Now, replace the contents of the `index.js` file with the following:
 
@@ -155,9 +111,11 @@ const generateResponse = (speechletResponse) => {
   <br />
   <br />
 
-10. After making the required modifications, make sure to save the Lambda function by clicking on the orange **Save** button located in the upper-right side of your screen.
+7. After making the required modifications, make sure to save the Lambda function by clicking on the orange **Save** button located in the upper-right side of your screen.
 
-11. Final step that we will do here is to **Copy the ARN value for this Lambda function** for use in the next section of the guide. Don't forget to save. 
+<br />
+
+8. Final step that we will do here is to **Copy the ARN value for this Lambda function** for use in the next section of the guide. Don't forget to save. 
 
   <br />
   <br />
