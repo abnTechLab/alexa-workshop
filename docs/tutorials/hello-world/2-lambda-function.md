@@ -115,7 +115,7 @@ const generateResponse = (speechletResponse) => {
 
 <br />
 
-8. Final step that we will do here is to **Copy the ARN value for this Lambda function** for use in the next section of the guide. Don't forget to save. 
+8. Final step that we will do here is to **Copy the ARN value for this Lambda function** for use in the next section of the guide. Don't forget to save if you made other modifications. 
 
   <br />
   <br />
