@@ -1,4 +1,7 @@
-![alexa](./resources/amazon-alexa-logo.png)
+![alexa](./docs/resources/amazon-alexa-logo.png)
+
+<br />
+<br />
 
 # Build Alexa Skills using NodeJS, AWS Lambda and Amazon Alexa Skills
 
@@ -10,7 +13,7 @@
 ## Let's start with the basics:
   * Alexa can complete a wide variety of tasks for you - from adjusting your smart lighting, to playing your favourite Spotify playlist or calling an Uber. She uses ‘Skills’ to achieve this: you can think of a Skill as Amazon’s version of a voice-only app, and each feature of a particular Skill is call an ‘Intent’. Since Alexa recognises natural language, there could be several ways that these questions or commands can be phrased. Each spoken phrase that can be used to activate a single Intent is called an ‘Utterance’.
 
-![alexa](./resources/alexa-skill-syntax.png)
+![alexa](./docs/resources/alexa-skill-syntax.png)
 
 Confused? OK, let’s break down what each part of the diagram above means:
 
@@ -34,12 +37,12 @@ Secondly, you need to set it up on the Amazon Developer Services portal as an Al
 
 In addition, you also need to define sample Utterances for your Skill in the portal. Essentially, these are examples of expected phrases that people will use in order to engage an Intent.
 
-![alexa](./resources/alexa-flow.png)
+![alexa](./docs/resources/alexa-flow.png)
 
 ## At the following links, you are provided with code snippets that implement different topics. They vary in complexity level, so be sure to check the one that suits you best:
 
-  [![hello-world](./resources/buttons/button-hello-world.png)](./tutorials/hello-world/index.md)
-  [![color-picker](./resources/buttons/button-color-picker.png)](./tutorials/color-picker/index.md)
-  [![nicknames](./resources/buttons/button-nicknames.png)](./tutorials/nicknames/index.md)
-  [![cryptocurrency-rates](./resources/buttons/button-cryptocurrency-rates.png)](./tutorials/cryptocurrency-rates/index.md)
+  [![hello-world](./docs/resources/buttons/button-hello-world.png)](./docs/tutorials/hello-world/index.md)
+  [![color-picker](./docs/resources/buttons/button-color-picker.png)](./docs/tutorials/color-picker/index.md)
+  [![nicknames](./docs/resources/buttons/button-nicknames.png)](./docs/tutorials/nicknames/index.md)
+  [![cryptocurrency-rates](./docs/resources/buttons/button-cryptocurrency-rates.png)](./docs/tutorials/cryptocurrency-rates/index.md)
  
