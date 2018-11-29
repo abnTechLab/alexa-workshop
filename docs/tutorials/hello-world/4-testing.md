@@ -83,23 +83,31 @@ So far, we have [created a Voice User Interface](./1-voice-user-interface.md), [
 This gives you visibility into four things:
 
 *  **Your response, listed in the "Execution Result."**
+
 <br />
+
 ![execution result](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/fact/4-5-5-1-execution-result._TTH_.png)
+
 <br />
 
 *  **A Summary of the statistics for your request.** This includes things like duration, resources, and memory used.
+
 <br />
+
 ![Summary](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/4-5-5-2-summary._TTH_.png)
+
 <br />
+
 *  **Log output.**  By effectively using console.log() statements in your Lambda code, you can track what is happening inside your function, and help to figure out what is happening when something goes wrong.  You will find the log to be incredibly valuable as you move into more advanced skills.
+
 <br />
+
 ![CloudWatch Logs](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/4-5-5-3-log-output._TTH_.png)
+
 <br />
 
 *  **A link to your [CloudWatch](https://console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logs:) logs for this function.**  This will show you **all** of the responses and log statements from every user interaction.  This is very useful, especially when you are testing your skill from a device with your voice.  (It is the "[Click here](https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#logs:)" link in the Log Output description.)
 
-
-    <br />
-    <br />
+<br />
     
 8.  **If your sample skill is working properly, you can now customize your skill. You're awesome!**
