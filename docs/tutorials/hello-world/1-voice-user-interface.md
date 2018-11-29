@@ -83,7 +83,9 @@ This page has a lift of checkpoints called **Skill builder checklist**. By compl
 <br />
 
 11. Now, after we will also create the AWS lambda function, we need to make then two components communicate with the other. In order to to that, they need to identify each other. Just as we have ID cards and passports, these components have a unique ID as well. For the Voice User Interface, you need to go to **Endpoint** tab item in the left side of the screen and select the **AWS Lambda ARN** option for your endpoint.
+
 <br />
+
 Next to it, you will find a weird looking string with random numbers and letters. This is **Your Skill ID** and you need to copy it as we will further need it when configuring our Lambda function. You'll find a very convenient **Copy to Clipboard** button underneath it. You can keep the tab open as we need to come back here again in a few minutes.
 
 
