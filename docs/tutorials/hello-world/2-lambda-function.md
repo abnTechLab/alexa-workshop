@@ -87,7 +87,7 @@ exports.handler = (event, context, callback) => {
 
   switch (event.request.type) {
     case "LaunchRequest":
-      context.succeed(generateResponse(buildSpeechletResponse("Welcome to IT Academy. Let's start coding", false)))
+      context.succeed(generateResponse(buildSpeechletResponse("Welcome to IT Academy. You created your first Alexa Skill! Congratulations! Let's do some shots now! First round is on Melvin Broekhuizen", false)))
       break;
     case "IntentRequest":
       switch (event.request.intent.name) {
