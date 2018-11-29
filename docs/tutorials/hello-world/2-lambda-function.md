@@ -17,21 +17,37 @@ In the [first step of this guide](./1-voice-user-interface.md), we built the Voi
   <br />
   <br />
 
-2.  **Click "Services" at the top of the screen, and type "Lambda" in the search box.**  You can also find Lambda in the list of services.  It is in the "Compute" section.
+2. **Click "Services" at the top of the screen, and type "Lambda" in the search box.**  You can also find Lambda in the list of services.  It is in the "Compute" section. Once you found it, click on it to proceed further.
 
 ![aws-console](./resources/aws-console.png)
 
-3. For your convenience, we have already created lambda functions and added the Alexa Skills Kit as a trigger to the lambda function. If you want to create a lambda function from scratch, you can follow the extra adjacent steps available [here](./adjacent-step-creating-lambda-function.md). It's just there for you to use in the future but for now you can proceed without that step. Let's move on.
+<br />
+
+3. For your convenience, we have already created lambda functions for you. If you want to create a lambda function from scratch, you can follow the extra adjacent steps available [here](./adjacent-step-creating-lambda-function.md). It's just there for you to use in the future but for now you can proceed without that step. Let's move on.
+
 
 <br />
 
-4. Be sure to check the lambda function associated with your team number from the list of available lambdas. This will be your playground for the following hours. Click on the `Alexa Skills Kit` trigger from the left panel and you can now see the `ASK` screen below. Inside the **Skill ID** field make sure to fill in the Skill ID that you have in clipboard from the Alexa Developer Console. Now, if you have good attention to details you might have already observed an important aspect: the lambda function has an unique ID for itself, which we need to copy and paste in the endpoint tab of the Alexa Developer Console, once we set up the lambda function. After pasting the Skill ID, make sure to hit **Add** and **Save** so we can continue our journey.
+4. Be sure to check the lambda function associated with your team number from the list of available lambdas. Those are: 
+
+* alexaworkshop_1
+* alexaworkshop_2
+* alexaworkshop_3
+* alexaworkshop_4
+* alexaworkshop_5
+* alexaworkshop_6
+
+
+This will be your playground for the following hours. On the left side of the screen you can see a list of triggers. Click on the `Alexa Skills Kit` trigger and you can now see the coresponding screen below, in a section called **Configure triggers**. 
+
+
+Inside the **Skill ID** field make sure to fill in the Skill ID that you have in clipboard from the **Alexa Developer Console**. Now, if you have good attention to details you might have already observed an important aspect: the lambda function has an unique ID for itself, which we need to copy and paste in the endpoint field of the **Alexa Developer Console**, once we set up the lambda function. After pasting the Skill ID, make sure to hit **Add** and **Save** so we can continue our journey.
 
 
   <br />
 
 
-5. Clicking on the Lambda function name in the **Designer** view, you will be prompted with the lambda main screen. If you scroll down for a bit, you will see a section/tab called **Function code**
+5. Clicking on the Lambda function name (_alexaworkshop_x_) in the **Designer** view, you will be prompted with the lambda main screen. If you scroll down for a bit, you will see a section/tab called **Function code**
 
   <br />
   <br />

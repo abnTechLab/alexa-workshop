@@ -6,13 +6,13 @@
 
 On [page #1](./1-voice-user-interface.md) of this guide, we created a voice user interface for the intents and utterances we expect from our users.  On [page #2](./2-lambda-function.md), we created a Lambda function that contains all of our logic for the skill.  On this page, we need to connect those two pieces together.
 
-1.  **Go back to the [Amazon Developer Portal](https://developer.amazon.com/alexa/console/ask?&sc_category=Owned&sc_channel=RD&sc_campaign=Evangelism2018&sc_publisher=github&sc_content=Survey&sc_detail=hello-world-nodejs-V2_GUI-3&sc_funnel=Convert&sc_country=WW&sc_medium=Owned_RD_Evangelism2018_github_Survey_hello-world-nodejs-V2_GUI-3_Convert_WW_beginnersdevs&sc_segment=beginnersdevs) and select your skill from the list.** You may still have a browser tab open if you started at the beginning of this tutorial.
+1.  **Go back to the tab where you left the [Amazon Developer Portal](https://developer.amazon.com/alexa/console/ask?&sc_category=Owned&sc_channel=RD&sc_campaign=Evangelism2018&sc_publisher=github&sc_content=Survey&sc_detail=hello-world-nodejs-V2_GUI-3&sc_funnel=Convert&sc_country=WW&sc_medium=Owned_RD_Evangelism2018_github_Survey_hello-world-nodejs-V2_GUI-3_Convert_WW_beginnersdevs&sc_segment=beginnersdevs) open.** 
 
-2. Select the **Endpoint** tab on the left side navigation panel.
+2. You should be in the **Endpoint** tab. If not, select the **Endpoint** tab on the left side navigation panel.
 
-3.  **Select the "AWS Lambda ARN" option for your endpoint.** You have the ability to host your code anywhere that you would like, but for the purposes of simplicity and frugality, we are using AWS Lambda.
+- You have the ability to host your code anywhere that you would like, but for the purposes of simplicity and frugality, we are using AWS Lambda.
 
-4.  Paste your Lambda's ARN (Amazon Resource Name) into the textbox provided for **Default Region**.
+3.  Paste your Lambda's ARN (Amazon Resource Name) into the textbox provided for **Default Region**.
 
   <br />
   <br />
@@ -22,9 +22,11 @@ On [page #1](./1-voice-user-interface.md) of this guide, we created a voice user
   <br />
   <br />
 
-5. Click the **Save Endpoints** button at the top of the main panel.
+4. Click the **Save Endpoints** button at the top of the main panel. Also click on the **Intents** tab from the left side navigation panel. You are now back in the _Intents_ menu where you can see **Save Model** and **Build Model** buttons at the top side of the page. You many now build the model by clicking on the **Build Model** button. This operation might take some time so .. sit back and relax. You will be notified when the model build is complete with a *Build Successful* message.
 
-6. **Click the "Next" button to continue to page #4 of this guide.**
+* Note: If you did other modifications, you might see that the **Save Model** button has a blue color. If this applies to you case, make sure to first **Save Model** before building the model.
+
+5. **Click the "Next" button to continue to page #4 of this guide.**
 
   <br />
   <br />

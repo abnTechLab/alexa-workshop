@@ -6,9 +6,7 @@
 
 So far, we have [created a Voice User Interface](./1-voice-user-interface.md), [a Lambda function](./2-lambda-function.md), and [connected the two together](./3-connect-vui-to-code.md).  Your skill is now ready to test.
 
-1.  **Go back to the [Amazon Developer Portal](https://developer.amazon.com/edw/home.html#/skills/list?&sc_category=Owned&sc_channel=RD&sc_campaign=Evangelism2018&sc_publisher=github&sc_content=Survey&sc_detail=hello-world-nodejs-V2_GUI-4&sc_funnel=Convert&sc_country=WW&sc_medium=Owned_RD_Evangelism2018_github_Survey_hello-world-nodejs-V2_GUI-4_Convert_WW_beginnersdevs&sc_segment=beginnersdevs) and select your skill from the list.** You may still have a browser tab open if you started at the beginning of this tutorial.
-
-2. If everything is all good and you followed all the steps, you should be able to see the Skill builder checklist all checked up. Congrats!
+1. If everything is all good and you followed all the steps, click on the **Build** tab on the top menu. You should be able to see the _Skill builder checklist_ all checked up on the right side of the screen. Congrats!
 
   <br />
   <br />
@@ -18,9 +16,11 @@ So far, we have [created a Voice User Interface](./1-voice-user-interface.md), [
   <br />
   <br />
 
-3. Now, let's test out our fresh new skill. Access the **Alexa Simulator**, by selecting the **Test** link from the top navigation menu.
+2. Now, let's test out our fresh new skill. Access the **Alexa Simulator**, by selecting the **Test** link from the top navigation menu.
 
-4. Enable Testing by activating the **Test is disabled for this skill** slider. It should be underneath the top navigation menu.  Enabling should change it to read **Test is enabled for this skill**.
+<br />
+
+3. Enable Testing by activating the **Test is disabled for this skill** slider. It should be underneath the top navigation menu.  Enabling should change it to read **Test is enabled for this skill**.
 
   <br />
   <br />
@@ -76,28 +76,30 @@ So far, we have [created a Voice User Interface](./1-voice-user-interface.md), [
   ![lambda-create-test](./resources/lambda-create-test.png)
 
   
-    <br />
-    <br />
 
-    6.  **Click the "Test" button to execute the "startSession" test event.**
+6.  **Click the "Test" button to execute the test event.**
 ![Test with event](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/4-5-5-save-and-test._TTH_.png)
 
-        This gives you visibility into four things:
+This gives you visibility into four things:
 
-        *  **Your response, listed in the "Execution Result."**
+*  **Your response, listed in the "Execution Result."**
+<br />
 ![execution result](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/fact/4-5-5-1-execution-result._TTH_.png)
+<br />
 
-        *  **A Summary of the statistics for your request.** This includes things like duration, resources, and memory used.
+*  **A Summary of the statistics for your request.** This includes things like duration, resources, and memory used.
+<br />
 ![Summary](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/4-5-5-2-summary._TTH_.png)
-
-        *  **Log output.**  By effectively using console.log() statements in your Lambda code, you can track what is happening inside your function, and help to figure out what is happening when something goes wrong.  You will find the log to be incredibly valuable as you move into more advanced skills.
+<br />
+*  **Log output.**  By effectively using console.log() statements in your Lambda code, you can track what is happening inside your function, and help to figure out what is happening when something goes wrong.  You will find the log to be incredibly valuable as you move into more advanced skills.
+<br />
 ![CloudWatch Logs](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/4-5-5-3-log-output._TTH_.png)
+<br />
 
-        *  **A link to your [CloudWatch](https://console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logs:) logs for this function.**  This will show you **all** of the responses and log statements from every user interaction.  This is very useful, especially when you are testing your skill from a device with your voice.  (It is the "[Click here](https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#logs:)" link in the Log Output description.)
-
+*  **A link to your [CloudWatch](https://console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logs:) logs for this function.**  This will show you **all** of the responses and log statements from every user interaction.  This is very useful, especially when you are testing your skill from a device with your voice.  (It is the "[Click here](https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#logs:)" link in the Log Output description.)
 
 
     <br />
     <br />
     
-8.  **If your sample skill is working properly, you can now customize your skill.**
+8.  **If your sample skill is working properly, you can now customize your skill. You're awesome!**
