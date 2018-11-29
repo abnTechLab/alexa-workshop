@@ -110,4 +110,4 @@ This gives you visibility into four things:
 
 <br />
     
-8.  **If your sample skill is working properly, you can now customize your skill. You're awesome!**
+8.  **If your sample skill is working properly, you can [now customize your skill](./5-customize.md). You're awesome!**
