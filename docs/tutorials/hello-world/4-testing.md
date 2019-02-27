@@ -20,7 +20,7 @@ So far, we have [created a Voice User Interface](./1-voice-user-interface.md), [
 
 <br />
 
-3. Enabling Testing is really easy. At first, the simulator will display **Test is disabled for this skill** and you should see the **Off** option selected. Click in the drop-down and select **Development**. After, you should see the label changed to **Skill testing is enabled in: Development**.
+3. Enabling testing is really easy. At first, the simulator will display **Test is disabled for this skill** and you should see the **Off** option selected. Click in the drop-down and select **Development**. After, you should see the label changed to **Skill testing is enabled in: Development**.
   <br />
   <br />
 
