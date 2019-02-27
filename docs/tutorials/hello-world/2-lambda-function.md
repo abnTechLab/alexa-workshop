@@ -38,7 +38,9 @@ In the [first step of this guide](./1-voice-user-interface.md), we built the Voi
 * alexaworkshop_6
 
 
-This will be your playground for the following hours. On the left side of the screen you can see a list of triggers. Click on the `Alexa Skills Kit` trigger and you can now see the coresponding screen below, in a section called **Configure triggers**. 
+This will be your playground for the following hours. On the left side of the screen you can see a list of triggers. Click on the `Alexa Skills Kit` trigger and you can now see the coresponding screen below, in a section called **Configure triggers**.
+
+![configure-triggers-screen](./resources/configure-triggers-screen.png)
 
 
 Inside the **Skill ID** field make sure to fill in the Skill ID that you have in clipboard from the **Alexa Developer Console**. Now, if you have good attention to details you might have already observed an important aspect: the lambda function has an unique ID for itself, which we need to copy and paste in the endpoint field of the **Alexa Developer Console**, once we set up the lambda function. After pasting the Skill ID, make sure to hit **Add** and **Save** so we can continue our journey.
