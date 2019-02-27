@@ -4,7 +4,7 @@
 
 ## Testing Your Alexa Skill
 
-So far, we have [created a Voice User Interface](./1-voice-user-interface.md), [a Lambda function](./2-lambda-function.md), and [connected the two together](./3-connect-vui-to-code.md).  Your skill is now ready to test.
+So far, we have [created a Voice User Interface](./1-voice-user-interface.md), [a Lambda function](./2-lambda-function.md), and [connected the two together](./3-connect-vui-to-code.md).  Your skill is now ready to be tested.
 
 1. If everything is all good and you followed all the steps, click on the **Build** tab on the top menu. You should be able to see the _Skill builder checklist_ all checked up on the right side of the screen. Congrats!
 
