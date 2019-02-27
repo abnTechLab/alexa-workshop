@@ -27,7 +27,7 @@
 <br />
 <br />
 
-5. Select the **Custom** model button to add it to your skill, and select the **Create Skill** button at the top right.
+5. Select the **Custom** model button to add it to your skill, and select the **Create Skill** button at the top right. As for the hosting methods, the one that we desire is the default one so you don't need to worry about that. You may proceed further!
 
 <br />
 
