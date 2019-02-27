@@ -16,7 +16,7 @@ So far, we have [created a Voice User Interface](./1-voice-user-interface.md), [
   <br />
   <br />
 
-2. Now, let's test out our fresh new skill. Access the **Alexa Simulator**, by selecting the **Test** link from the top navigation menu.
+2. Now, let's test out our fresh new skill. Access the **Alexa Simulator**, by selecting the **Test** tab from the top navigation menu.
 
 <br />
 
