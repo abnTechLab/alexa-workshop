@@ -3,7 +3,7 @@
 
 <br />
 
-####For this skill we want to achieve the following result
+#### For this skill we want to achieve the following result
 
 ![color-picker-end-result](./resources/color-picker-end-result.png)
 
