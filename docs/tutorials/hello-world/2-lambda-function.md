@@ -94,7 +94,7 @@ exports.handler = (event, context, callback) => {
     case "IntentRequest":
       switch (event.request.intent.name) {
         case INTENT_NAME: {
-          context.succeed(generateResponse(buildSpeechletResponse(MESSAGE), false))
+          context.succeed(generateResponse(buildSpeechletResponse(MESSAGE, false)));
           break;
         }
 
